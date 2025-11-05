@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Acids & Bases</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="page-nav">
+            <a href="chapter4.html">← Chapter 4</a> |
+            <a href="index.html">Home</a> |
+            <a href="chapter6.html">Chapter 6 →</a>
+        </nav>
+        
+        <h1>Chapter 5: Acid-Base Definitions and Strength 🧪</h1>
+        <p>Defining acidity, quantifying it with pH, and calculating pH for strong and weak solutions.</p>
+        <hr>
+
+        <details>
+            <summary>Core Concepts</summary>
+            <div class="content">
+                <h3>Acid-Base Definitions</h3>
+                <ul>
+                    <li><strong>Brønsted-Lowry:</strong> Acid is a proton (H<sup>+</sup>) <strong>donor</strong>. Base is a proton <strong>acceptor</strong>.</li>
+                    <li><strong>Conjugate Pair:</strong> An acid/base pair that differs by one H<sup>+</sup> (e.g., HF/F<sup>-</sup>).</li>
+                </ul>
+
+                <h3>Autoionization of Water (K<sub>w</sub>)</h3>
+                <p><code>H<sub>2</sub>O + H<sub>2</sub>O &rightleftharpoons; H<sub>3</sub>O<sup>+</sup> + OH<sup>-</sup></code></p>
+                <p><strong><code>K<sub>w</sub> = [H<sub>3</sub>O<sup>+</sup>][OH<sup>-</sup>] = 1.0 x 10<sup>-14</sup></code></strong> (at 25°C). This is true for ALL aqueous solutions.</p>
+
+                <h3>The pH Scale</h3>
+                <ul>
+                    <li><strong><code>pH = -log[H<sub>3</sub>O<sup>+</sup>]</code></strong></li>
+                    <li><strong><code>pOH = -log[OH<sup>-</sup>]</code></strong></li>
+                    <li><strong><code>pH + pOH = 14.00</code></strong></li>
+                    <li>Acidic: pH < 7 | Neutral: pH = 7 | Basic: pH > 7</li>
+                </ul>
+
+                <h3>Strong vs. Weak</h3>
+                <ul>
+                    <li><strong>Strong Acids/Bases:</strong> Dissociate 100%. This is a stoichiometry problem. (e.g., HCl, NaOH).</li>
+                    <li><strong>Weak Acids/Bases:</strong> Dissociate partially. This is an equilibrium problem. (e.g., HF, NH<sub>3</sub>).</li>
+                </ul>
+
+                <h3>Dissociation Constants (K<sub>a</sub>, K<sub>b</sub>)</h3>
+                <ul>
+                    <li><strong>K<sub>a</sub> (Acid):</strong> <code>HA &rightleftharpoons; H<sup>+</sup> + A<sup>-</sup></code> → <code>K<sub>a</sub> = [H<sup>+</sup>][A<sup>-</sup>] / [HA]</code></li>
+                    <li><strong>K<sub>b</sub> (Base):</strong> <code>B + H<sub>2</sub>O &rightleftharpoons; BH<sup>+</sup> + OH<sup>-</sup></code> → <code>K<sub>b</sub> = [BH<sup>+</sup>][OH<sup>-</sup>] / [B]</code></li>
+                    <li><strong>Relationship:</strong> For a conjugate pair, <strong><code>K<sub>a</sub> × K<sub>b</sub> = K<sub>w</sub></code></strong>.</li>
+                </ul>
+
+                <h3>Salt Hydrolysis</h3>
+                <p>Some ions react with water to change pH:</p>
+                <ul>
+                    <li><strong>Neutral:</strong> Cation from Strong Base, Anion from Strong Acid (e.g., NaCl).</li>
+                    <li><strong>Basic:</strong> Anion is a conjugate base of a weak acid (e.g., NaF → F<sup>-</sup> is basic).</li>
+                    <li><strong>Acidic:</strong> Cation is a conjugate acid of a weak base (e.g., NH<sub>4</sub>Cl → NH<sub>4</sub><sup>+</sup> is acidic).</li>
+                </ul>
+            </div>
+        </details>
+
+        <details>
+            <summary>Key Skills & Problem Solving</summary>
+            <div class="content">
+                <h3>Strong Acid/Base pH</h3>
+                <p>This is stoichiometry. For 0.05 M HCl, [H<sub>3</sub>O<sup>+</sup>] = 0.05 M. For 0.05 M Ba(OH)<sub>2</sub>, [OH<sup>-</sup>] = 0.10 M (watch stoichiometry!)</p>
+                
+                <h3>Weak Acid/Base pH</h3>
+                <p>This is an ICE table problem using K<sub>a</sub> or K<sub>b</sub>.</p>
+                <ol>
+                    <li>Write the dissociation reaction.</li>
+                    <li>Set up ICE table to find [H<sub>3</sub>O<sup>+</sup>] or [OH<sup>-</sup>] (which is 'x').</li>
+                    <li>Solve <code>K<sub>a</sub> = x<sup>2</sup> / ([Initial] - x)</code>. Use the 5% approximation.</li>
+                    <li>Check approximation.</li>
+                    <li>Calculate pH (or pOH, then pH).</li>
+                </ol>
+                
+                <h3>Percent Ionization</h3>
+                <p><code>Percent Ionization = ([H<sub>3</sub>O<sup>+</sup>]<sub>eq</sub> / [HA]<sub>initial</sub>) × 100%</code></p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Common Pitfalls</summary>
+            <div class="content">
+                <ul>
+                    <li><strong>Confusing strong and weak.</strong> This is the #1 mistake. Don't use an ICE table for a strong acid!</li>
+                    <li><strong>Mixing pH and pOH.</strong> If you solve a weak BASE problem, 'x' = [OH<sup>-</sup>]. You must find pOH first, then pH.</li>
+                    <li>Forgetting <code>K<sub>a</sub> × K<sub>b</sub> = K<sub>w</sub></code>. You are often given K<sub>a</sub> for an acid but must find the pH of its conjugate base (a salt). You must calculate K<sub>b</sub> first.</li>
+                    <li>Assuming all salts are neutral (they are not!).</li>
+                </ul>
+            </div>
+        </details>
+        
+        <details>
+            <summary>Expected Question Types</summary>
+            <div class="content">
+                <ol>
+                    <li><strong>Given:</strong> A reaction. <strong>Find:</strong> The Brønsted-Lowry acid, base, conjugates.</li>
+                    <li><strong>Given:</strong> One of pH, pOH, [H<sub>3</sub>O<sup>+</sup>], [OH<sup>-</sup>]. <strong>Find:</strong> The other three.</li>
+                    <li><strong>Given:</strong> Concentration of a strong acid/base. <strong>Find:</strong> pH.</li>
+                    <li><strong>Given:</strong> Concentration and K<sub>a</sub> of a weak acid. <strong>Find:</strong> pH.</li>
+                    <li><strong>Given:</strong> Concentration and K<sub>b</sub> of a weak base. <strong>Find:</strong> pH.</li>
+                    <li><strong>Given:</strong> Concentration and pH of a weak acid. <strong>Find:</strong> K<sub>a</sub> (ICE table in reverse).</li>
+                    <li><strong>Given:</strong> K<sub>a</sub> for an acid. <strong>Find:</strong> K<sub>b</sub> for its conjugate base.</li>
+                    <li><strong>Given:</strong> Concentration of a salt (e.g., NaF, NH<sub>4</sub>Cl). <strong>Find:</strong> The pH (salt hydrolysis).</li>
+                </ol>
+            </div>
+        </details>
+    </div>
+</body>
+</html>
