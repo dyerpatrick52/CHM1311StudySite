@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: Aqueous Equilibria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="page-nav">
+            <a href="chapter5.html">← Chapter 5</a> |
+            <a href="index.html">Home</a>
+        </nav>
+
+        <h1>Chapter 6: Additional Aspects of Aqueous Equilibria 🧮</h1>
+        <p>Applying equilibrium concepts to complex systems like buffers, titrations, and solubility.</p>
+        <hr>
+
+        <details>
+            <summary>Core Concepts</summary>
+            <div class="content">
+                <h3>Common-Ion Effect</h3>
+                <p>The suppression of dissociation of a weak electrolyte by adding a common ion. Adding NaF to a solution of HF shifts the equilibrium <code>HF &rightleftharpoons; H<sup>+</sup> + F<sup>-</sup></code> to the <strong>LEFT</strong>.</p>
+                
+                <h3>Buffer Solutions</h3>
+                <ul>
+                    <li><strong>What they are:</strong> A solution that resists changes in pH.</li>
+                    <li><strong>Composition:</strong> A <strong>weak acid + its conjugate base</strong> (e.g., HF + NaF) OR a <strong>weak base + its conjugate acid</strong> (e.g., NH<sub>3</sub> + NH<sub>4</sub>Cl).</li>
+                    <li><strong>How they work:</strong> The conjugate base (A<sup>-</sup>) neutralizes added H<sup>+</sup>. The weak acid (HA) neutralizes added OH<sup>-</sup>.</li>
+                </ul>
+
+                <h3>Titrations</h3>
+                <p>A procedure to determine the concentration of an unknown by reacting it with a known solution.</p>
+                <ul>
+                    <li><strong>Equivalence Point:</strong> Moles of titrant = Moles of analyte.</li>
+                    <li><strong>Half-Equivalence Point:</strong> (For weak titrations) Half of the analyte has been neutralized. At this point, <strong><code>pH = pK<sub>a</sub></code></strong>.</li>
+                    <li><strong>pH at Equivalence Point:</strong>
+                        <ul>
+                            <li>Strong Acid/Strong Base: pH = 7.00</li>
+                            <li>Weak Acid/Strong Base: pH > 7.00 (conjugate base is present)</li>
+                            <li>Weak Base/Strong Acid: pH < 7.00 (conjugate acid is present)</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Solubility Equilibria (K<sub>sp</sub>)</h3>
+                <p>The equilibrium for "insoluble" salts. <strong>Molar Solubility (s)</strong> is the moles of salt that dissolve in 1 L.</p>
+                <ul>
+                    <li><code>AgCl(s) &rightleftharpoons; Ag<sup>+</sup>(aq) + Cl<sup>-</sup>(aq)</code></li>
+                    <li><strong><code>K<sub>sp</sub> = [Ag<sup>+</sup>][Cl<sup>-</sup>]</code></strong></li>
+                    <li>In this case, <code>K<sub>sp</sub> = (s)(s) = s<sup>2</sup></code></li>
+                </ul>
+                <ul>
+                    <li><code>PbI<sub>2</sub>(s) &rightleftharpoons; Pb<sup>2+</sup>(aq) + 2I<sup>-</sup>(aq)</code></li>
+                    <li><strong><code>K<sub>sp</sub> = [Pb<sup>2+</sup>][I<sup>-</sup>]<sup>2</sup></code></strong></li>
+                    <li>In this case, <code>K<sub>sp</sub> = (s)(2s)<sup>2</sup> = 4s<sup>3</sup></code></li>
+                </ul>
+                <p><strong>Predicting Precipitation (Q vs K<sub>sp</sub>):</strong></p>
+                <ul>
+                    <li><strong>Q < K<sub>sp</sub>:</strong> Unsaturated. No precipitate.</li>
+                    <li><strong>Q > K<sub>sp</sub>:</strong> Supersaturated. <strong>Precipitate will form.</strong></li>
+                    <li><strong>Q = K<sub>sp</sub>:</strong> Saturated. At equilibrium.</li>
+                </ul>
+            </div>
+        </details>
+
+        <details>
+            <summary>Key Skills & Problem Solving</summary>
+            <div class="content">
+                <h3>Henderson-Hasselbalch Equation (Buffers)</h3>
+                <p>A shortcut for buffer pH calculations. <strong>ONLY FOR BUFFERS.</strong></p>
+                <p><strong><code>pH = pK<sub>a</sub> + log([Base] / [Acid])</code></strong></p>
+
+                <h3>Titration pH Calculations (4 Regions)</h3>
+                <ol>
+                    <li><strong>Initial pH:</strong> A Ch. 5 weak acid/base problem.</li>
+                    <li><strong>Buffer Region (before eq. point):</strong> A buffer problem. Use stoichiometry ("before/after" table) then H-H equation.</li>
+                    <li><strong>Equivalence Point:</strong> A Ch. 5 salt hydrolysis problem.</li>
+                    <li><strong>Past Equivalence Point:</strong> A strong acid/base problem (determined by excess titrant).</li>
+                </ol>
+
+                <h3>K<sub>sp</sub> and Molar Solubility (s)</h3>
+                <p>Use an ICE table (omitting the solid) to relate K<sub>sp</sub> and s. Remember the common-ion effect will <strong>decrease</strong> solubility.</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Common Pitfalls</summary>
+            <div class="content">
+                <ul>
+                    <li><strong>Misusing H-H equation.</strong> It only works for buffers, not at the start of a titration or at the equivalence point.</li>
+                    <li>Confusing Molar Solubility (s, in mol/L) with K<sub>sp</sub> (the constant).</li>
+                    <li>Forgetting stoichiometry in the K<sub>sp</sub> expression (e.g., <code>(2s)<sup>2</sup></code>).</li>
+                    <li>Assuming the equivalence point of a weak titration is at pH 7. It is not!</li>
+                    <li>Forgetting to account for dilution when two solutions are mixed (for Q vs K<sub>sp</sub> problems).</li>
+                </ul>
+            </div>
+        </details>
+        
+        <details>
+            <summary>Expected Question Types</summary>
+            <div class="content">
+                <ol>
+                    <li><strong>Given:</strong> [Weak Acid] and [Conj. Base]. <strong>Find:</strong> pH. (H-H equation).</li>
+                    <li><strong>Given:</strong> A buffer. <strong>Find:</strong> New pH after adding a small amount of strong acid/base. (Stoichiometry + H-H).</li>
+                    <li><strong>Given:</strong> A target pH. <strong>Find:</strong> Which acid/base pair is best to make a buffer? (Choose one where pK<sub>a</sub> ≈ target pH).</li>
+                    <li><strong>Given:</strong> A titration setup. <strong>Find:</strong> The pH at the 4 key regions (Initial, buffer, equivalence, excess).</li>
+                    <li><strong>Given:</strong> Molar solubility (s). <strong>Find:</strong> K<sub>sp</sub>.</li>
+                    <li><strong>Given:</strong> K<sub>sp</sub>. <strong>Find:</strong> Molar solubility (s) in pure water.</li>
+                    <li><strong>Given:</strong> K<sub>sp</sub>. <strong>Find:</strong> Molar solubility (s) in a solution with a common ion.</li>
+                    <li><strong>Given:</strong> Two mixed solutions. <strong>Find:</strong> Will a precipitate form? (Dilution → Calculate Q → Compare to K<sub>sp</sub>).</li>
+                </ol>
+            </div>
+        </details>
+    </div>
+</body>
+</html>
