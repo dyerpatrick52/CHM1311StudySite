@@ -1,0 +1,150 @@
+/* --- Global Styles --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #343a40; /* Dark grey text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px 40px;
+    background-color: #ffffff; /* White content area */
+    border: 1px solid #dee2e6; /* Light border */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    color: #0056b3; /* A nice blue */
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #007bff; /* Lighter blue for subheadings */
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+code {
+    background-color: #e9ecef; /* Code block background */
+    color: #c7254e; /* Reddish text for code */
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.9em;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* --- Navigation --- */
+.home-nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.home-nav li {
+    display: block;
+    margin: 10px 0;
+}
+
+.home-nav a {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.3em;
+    font-weight: 500;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.home-nav a:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #007bff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.page-nav {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.page-nav a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 10px;
+}
+
+.page-nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- Collapsible Sections --- */
+details {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+details[open] {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+summary {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #495057; /* Darker heading */
+    background-color: #f8f9fa; /* Light grey heading background */
+    padding: 15px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #dee2e6;
+    list-style: none; /* Removes the default triangle */
+    position: relative;
+}
+
+/* Custom triangle/arrow */
+summary::before {
+    content: '►';
+    position: absolute;
+    left: 20px;
+    font-size: 0.7em;
+    color: #007bff;
+    transform: rotate(0deg);
+    transition: transform 0.2s;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+summary {
+    padding-left: 40px; /* Make room for custom arrow */
+}
+
+
+.content {
+    padding: 20px 30px;
+    border-top: 1px solid #dee2e6;
+}
