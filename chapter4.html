@@ -17,6 +17,7 @@
         <p>Understanding the balance between reactants and products in reversible reactions.</p>
         <hr>
 
+        <!-- Core Concepts -->
         <details>
             <summary>Core Concepts</summary>
             <div class="content">
@@ -59,6 +60,7 @@
             </div>
         </details>
 
+        <!-- Key Skills -->
         <details>
             <summary>Key Skills & Problem Solving</summary>
             <div class="content">
@@ -73,6 +75,7 @@
             </div>
         </details>
 
+        <!-- Common Pitfalls -->
         <details>
             <summary>Common Pitfalls</summary>
             <div class="content">
@@ -86,17 +89,104 @@
             </div>
         </details>
         
+        <!-- Question Types (UPDATED SECTION) -->
         <details>
             <summary>Expected Question Types</summary>
             <div class="content">
                 <ol>
-                    <li><strong>Given:</strong> A reaction. <strong>Find:</strong> The K<sub>c</sub> or K<sub>p</sub> expression.</li>
-                    <li><strong>Given:</strong> Equilibrium concentrations. <strong>Find:</strong> The value of K.</li>
-                    <li><strong>Given:</strong> Initial concentrations and one equilibrium concentration. <strong>Find:</strong> The value of K (ICE table).</li>
-                    <li><strong>Given:</strong> K and initial concentrations. <strong>Find:</strong> Equilibrium concentrations (ICE table + solve for x).</li>
-                    <li><strong>Given:</strong> K<sub>c</sub> and T. <strong>Find:</strong> K<sub>p</sub> (or vice-versa).</li>
-                    <li><strong>Given:</strong> K and a set of initial concentrations. <strong>Find:</strong> Which direction the reaction will shift (Calculate Q vs. K).</li>
-                    <li><strong>Given:</strong> A system at equilibrium. <strong>Find:</strong> Which direction it will shift if you change T, P, or concentration (Le Châtelier's).</li>
+                    <!-- Question 1 -->
+                    <li>
+                        <strong>Given:</strong> A reaction. <strong>Find:</strong> The K<sub>c</sub> or K<sub>p</sub> expression.
+                        <ul class="steps">
+                            <li>Write the expression as <code>[Products] / [Reactants]</code>.</li>
+                            <li>For K<sub>c</sub>, use concentrations <code>[ ]</code>. For K<sub>p</sub>, use partial pressures <code>P<sub>X</sub></code>.</li>
+                            <li>Raise each species to the power of its stoichiometric <strong>coefficient</strong>.</li>
+                            <li><strong>Crucially:</strong> Exclude any pure <strong>solids (s)</strong> or pure <strong>liquids (l)</strong>.</li>
+                        </ul>
+                    </li>
+    
+                    <!-- Question 2 -->
+                    <li>
+                        <strong>Given:</strong> Equilibrium concentrations. <strong>Find:</strong> The value of K.
+                        <ul class="steps">
+                            <li>Write the correct K expression (see steps above).</li>
+                            <li>Substitute the given <strong>equilibrium</strong> concentrations or pressures directly into the expression.</li>
+                            <li>Calculate the final value.</li>
+                        </ul>
+                    </li>
+    
+                    <!-- Question 3 -->
+                    <li>
+                        <strong>Given:</strong> Initial concentrations and one equilibrium concentration. <strong>Find:</strong> The value of K.
+                        <ul class="steps">
+                            <li>Set up an <strong>ICE table</strong> (Initial, Change, Equilibrium).</li>
+                            <li>Fill in the "I" row with the given <strong>initial</strong> concentrations.</li>
+                            <li>Use the one known <strong>equilibrium</strong> concentration to solve for the "C" (Change) value, <code>x</code>.</li>
+                            <li>Use <code>x</code> to calculate all other "E" (Equilibrium) concentrations based on stoichiometry.</li>
+                            <li>Write the K expression.</li>
+                            <li>Plug all the calculated "E" values into the K expression and solve for K.</li>
+                        </ul>
+                    </li>
+    
+                    <!-- Question 4 -->
+                    <li>
+                        <strong>Given:</strong> K and initial concentrations. <strong>Find:</strong> Equilibrium concentrations.
+                        <ul class="steps">
+                            <li>Set up an <strong>ICE table</strong>.</li>
+                            <li>Fill in the "I" row with <strong>initial</strong> concentrations.</li>
+                            <li>Fill in the "C" row using <code>+x</code> and <code>-x</code>, applying stoichiometric coefficients (e.g., <code>-2x</code>, <code>+3x</code>).</li>
+                            <li>Fill in the "E" row by combining the "I" and "C" rows (e.g., <code>0.10 - 2x</code>).</li>
+                            <li>Write the K expression.</li>
+                            <li>Substitute the "E" row expressions into the K expression.</li>
+                            <li>Solve for <code>x</code>. (Tip: Try the <strong>5% approximation</strong> if K is small).</li>
+                            <li><strong>Check the approximation:</strong> <code>(x / [Initial]) * 100% < 5%</code>. If it fails, use the quadratic formula.</li>
+                            <li>Plug the value of <code>x</code> back into the "E" row expressions to find the final equilibrium concentrations.</li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Question 5 -->
+                    <li>
+                        <strong>Given:</strong> K<sub>c</sub> and T. <strong>Find:</strong> K<sub>p</sub> (or vice-versa).
+                        <ul class="steps">
+                            <li>Use the formula: <strong><code>K<sub>p</sub> = K<sub>c</sub>(RT)<sup>&Delta;n</sup></code></strong>.</li>
+                            <li>Identify T in <strong>Kelvin</strong> (K = &deg;C + 273.15).</li>
+                            <li>Use R = <code>0.08206 L&middot;atm/(mol&middot;K)</code>.</li>
+                            <li>Calculate <strong><code>&Delta;n</code></strong> = (sum of moles of <strong>gas</strong> products) - (sum of moles of <strong>gas</strong> reactants).</li>
+                            <li>Plug in all values and solve for the unknown K.</li>
+                        </ul>
+                    </li>
+    
+                    <!-- Question 6 -->
+                    <li>
+                        <strong>Given:</strong> K and a set of initial concentrations. <strong>Find:</strong> Which direction the reaction will shift.
+                        <ul class="steps">
+                            <li>Write the K expression, but label it <strong>Q</strong> (Reaction Quotient).</li>
+                            <li>Plug the given <strong>initial</strong> (non-equilibrium) concentrations into the Q expression.</li>
+                            <li>Compare Q to K:
+                                <ul>
+                                    <li><strong>Q < K</strong>: Ratio is too small. Shifts <strong>RIGHT (&rightarrow;)</strong> to make products.</li>
+                                    <li><strong>Q > K</strong>: Ratio is too large. Shifts <strong>LEFT (&leftarrow;)</strong> to make reactants.</li>
+                                    <li><strong>Q = K</strong>: System is at equilibrium.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <!-- Question 7 -->
+                    <li>
+                        <strong>Given:</strong> A system at equilibrium. <strong>Find:</strong> Which direction it will shift if you change T, P, or concentration.
+                        <ul class="steps">
+                            <li><strong>Concentration:</strong> If you <strong>ADD</strong> a substance, shift <strong>AWAY</strong>. If you <strong>REMOVE</strong>, shift <strong>TOWARD</strong>.</li>
+                            <li><strong>Pressure (Gases):</strong> If you <strong>INCREASE P</strong>, shift to side with <strong>FEWER</strong> moles of gas. If you <strong>DECREASE P</strong>, shift to side with <strong>MORE</strong> moles of gas.</li>
+                            <li><strong>Temperature:</strong>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>Treat heat as a reactant (endothermic, &Delta;H > 0) or product (exothermic, &Delta;H < 0).</li>
+                                    <li>If you <strong>ADD heat</strong> (increase T), shift <strong>AWAY</strong> from "Heat".</li>
+                                    <li>If you <strong>REMOVE heat</strong> (decrease T), shift <strong>TOWARD</strong> "Heat".</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
                 </ol>
             </div>
         </details>

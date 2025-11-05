@@ -17,6 +17,7 @@
         <p>Applying equilibrium concepts to complex systems like buffers, titrations, and solubility.</p>
         <hr>
 
+        <!-- Core Concepts -->
         <details>
             <summary>Core Concepts</summary>
             <div class="content">
@@ -65,6 +66,7 @@
             </div>
         </details>
 
+        <!-- Key Skills -->
         <details>
             <summary>Key Skills & Problem Solving</summary>
             <div class="content">
@@ -85,6 +87,7 @@
             </div>
         </details>
 
+        <!-- Common Pitfalls -->
         <details>
             <summary>Common Pitfalls</summary>
             <div class="content">
@@ -98,18 +101,166 @@
             </div>
         </details>
         
+        <!-- Question Types (UPDATED SECTION) -->
         <details>
             <summary>Expected Question Types</summary>
             <div class="content">
                 <ol>
-                    <li><strong>Given:</strong> [Weak Acid] and [Conj. Base]. <strong>Find:</strong> pH. (H-H equation).</li>
-                    <li><strong>Given:</strong> A buffer. <strong>Find:</strong> New pH after adding a small amount of strong acid/base. (Stoichiometry + H-H).</li>
-                    <li><strong>Given:</strong> A target pH. <strong>Find:</strong> Which acid/base pair is best to make a buffer? (Choose one where pK<sub>a</sub> ≈ target pH).</li>
-                    <li><strong>Given:</strong> A titration setup. <strong>Find:</strong> The pH at the 4 key regions (Initial, buffer, equivalence, excess).</li>
-                    <li><strong>Given:</strong> Molar solubility (s). <strong>Find:</strong> K<sub>sp</sub>.</li>
-                    <li><strong>Given:</strong> K<sub>sp</sub>. <strong>Find:</strong> Molar solubility (s) in pure water.</li>
-                    <li><strong>Given:</strong> K<sub>sp</sub>. <strong>Find:</strong> Molar solubility (s) in a solution with a common ion.</li>
-                    <li><strong>Given:</strong> Two mixed solutions. <strong>Find:</strong> Will a precipitate form? (Dilution → Calculate Q → Compare to K<sub>sp</sub>).</li>
+                    <!-- Question 1 -->
+                    <li>
+                        <strong>Given:</strong> [Weak Acid] and [Conj. Base]. <strong>Find:</strong> pH.
+                        <ul class="steps">
+                            <li>Identify the solution as a <strong>buffer</strong>.</li>
+                            <li>Use the <strong>Henderson-Hasselbalch (H-H) equation</strong>: <code>pH = pK<sub>a</sub> + log([Base]/[Acid])</code>.</li>
+                            <li>If given K<sub>a</sub>, find <code>pK<sub>a</sub> = -log(K<sub>a</sub>)</code>.</li>
+                            <li>Plug in concentrations and solve for pH.</li>
+                            <li>(Alternatively: Use a full ICE table, but H-H is faster).</li>
+                        </ul>
+                    </li>
+
+                    <!-- Question 2 -->
+                    <li>
+                        <strong>Given:</strong> A target pH. <strong>Find:</strong> Which acid/base pair is best to make a buffer?
+                        <ul class="steps">
+                            <li>A buffer works best when its <strong><code>pH &approx; pK<sub>a</sub></code></strong>.</li>
+                            <li>Calculate the <code>pK<sub>a</sub> = -log(K<sub>a</sub>)</code> for each available acid.</li>
+                            <li>Choose the acid whose <code>pK<sub>a</sub></code> is <strong>closest</strong> to the target pH.</li>
+                        </ul>
+                    </li>
+
+                    <!-- Question 3 -->
+                    <li>
+                        <strong>Given:</strong> A buffer. <strong>Find:</strong> New pH after adding a small amount of strong acid/base.
+                        <ul class="steps">
+                            <li><strong>Part 1: Stoichiometry (Before/After Table)</strong>
+                                <ul>
+                                    <li>Work in <strong>moles</strong> (moles = M × L).</li>
+                                    <li>Write the reaction:
+                                        <ul>
+                                            <li>If adding H<sup>+</sup>: <code>A<sup>-</sup> + H<sup>+</sup> &rightarrow; HA</code></li>
+                                            <li>If adding OH<sup>-</sup>: <code>HA + OH<sup>-</sup> &rightarrow; A<sup>-</sup> + H<sub>2</sub>O</code></li>
+                                        </ul>
+                                    </li>
+                                    <li>Use a "Before/Add/After" table to find the <strong>new moles</strong> of HA and A<sup>-</sup>.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Part 2: Equilibrium (H-H Equation)</strong>
+                                <ul>
+                                    <li>Use the <strong>new moles</strong> from the "After" row in the H-H equation.</li>
+                                    <li><code>pH = pK<sub>a</sub> + log(moles Base / moles Acid)</code>.</li>
+                                    <li>(You can use moles directly since the volume is the same and would cancel out).</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Question 4 -->
+                    <li>
+                        <strong>Given:</strong> A titration setup. <strong>Find:</strong> The pH at the 4 key regions.
+                        <ul class="steps">
+                            <li><strong>1. Initial pH (0 mL titrant):</strong>
+                                <ul>
+                                    <li>This is a <strong>Chapter 5 weak acid/base problem</strong>. Use an ICE table and K<sub>a</sub> (or K<sub>b</sub>).</li>
+                                </ul>
+                            </li>
+                            <li><strong>2. Buffer Region (after adding titrant, before eq. point):</strong>
+                                <ul>
+                                    <li>This is a <strong>buffer problem</strong>. Use a "Before/After" stoichiometry table to find moles of HA and A<sup>-</sup>, then use the H-H equation.</li>
+                                    <li><strong>Shortcut (Half-Equivalence Point):</strong> At this specific point, <code>pH = pK<sub>a</sub></code>.</li>
+                                </ul>
+                            </li>
+                            <li><strong>3. Equivalence Point:</strong>
+                                <ul>
+                                    <li>All the initial acid/base has been converted to its conjugate.</li>
+                                    <li>This is a <strong>Chapter 5 salt hydrolysis problem</strong>.</li>
+                                    <li>Find the <strong>new total volume</strong>, calculate the concentration of the conjugate, and use K<sub>b</sub> (or K<sub>a</sub>) with an ICE table to find pOH (or pH).</li>
+                                </ul>
+                            </li>
+                            <li><strong>4. Past Equivalence Point:</strong>
+                                <ul>
+                                    <li>The pH is now determined <strong>only by the excess strong titrant</strong>.</li>
+                                    <li>Find moles of excess H<sup>+</sup> or OH<sup>-</sup>.</li>
+                                    <li>Find the <strong>new total volume</strong>.</li>
+                                    <li>Calculate <code>[H<sup>+</sup>]</code> or <code>[OH<sup>-</sup>]</code> = (moles excess) / (total L).</li>
+                                    <li>Calculate pH or pOH.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Question 5 -->
+                    <li>
+                        <strong>Given:</strong> Molar solubility (s). <strong>Find:</strong> K<sub>sp</sub>.
+                        <ul class="steps">
+                            <li>Write the dissociation equation (e.g., <code>PbI<sub>2</sub>(s) &rightleftharpoons; Pb<sup>2+</sup> + 2I<sup>-</sup></code>).</li>
+                            <li>Write the K<sub>sp</sub> expression (e.g., <code>K<sub>sp</sub> = [Pb<sup>2+</sup>][I<sup>-</sup>]<sup>2</sup></code>).</li>
+                            <li>Relate the ion concentrations to <code>s</code> based on stoichiometry:
+                                <ul>
+                                    <li><code>[Pb<sup>2+</sup>] = s</code></li>
+                                    <li><code>[I<sup>-</sup>] = 2s</code></li>
+                                </ul>
+                            </li>
+                            <li>Substitute these <code>s</code> values into the K<sub>sp</sub> expression: <code>K<sub>sp</sub> = (s)(2s)<sup>2</sup> = 4s<sup>3</sup></code>.</li>
+                            <li>Plug in the given value for <code>s</code> and solve for K<sub>sp</sub>.</li>
+                        </ul>
+                    </li>
+
+                    <!-- Question 6 -->
+                    <li>
+                        <strong>Given:</strong> K<sub>sp</sub>. <strong>Find:</strong> Molar solubility (s) in pure water.
+                        <ul class="steps">
+                            <li>This is the reverse of Question 5.</li>
+                            <li>Write the dissociation and K<sub>sp</sub> expression.</li>
+                            <li>Set up a simple ICE table where <code>s</code> is the change.
+                                <ul>
+                                    <li>Equilibrium concentrations will be <code>s</code>, <code>2s</code>, etc.</li>
+                                </ul>
+                            </li>
+                            <li>Substitute these <code>s</code> expressions into the K<sub>sp</sub> expression (e.g., <code>K<sub>sp</sub> = 4s<sup>3</sup></code>).</li>
+                            <li>Plug in the given value for K<sub>sp</sub> and solve for <code>s</code>.</li>
+                        </ul>
+                    </li>
+
+                    <!-- Question 7 -->
+                    <li>
+                        <strong>Given:</strong> K<sub>sp</sub>. <strong>Find:</strong> Molar solubility (s) in a solution with a <strong>common ion</strong>.
+                        <ul class="steps">
+                            <li>Write the dissociation and K<sub>sp</sub> expression.</li>
+                            <li_>Set up an <strong>ICE table</strong>.</li>
+                            <li>The "I" (Initial) row will be <strong>zero</strong> for one ion, but will be the <strong>given concentration</strong> for the common ion (e.g., <code>[I<sup>-</sup>]<sub>initial</sub> = 0.1 M</code>).</li>
+                            <li>The "C" (Change) row is <code>+s</code>, <code>+2s</code>, etc.</li>
+                            <li>The "E" (Equilibrium) row will be <code>s</code> and <code>0.1 + 2s</code>.</li>
+                            <li>Substitute "E" values into K<sub>sp</sub>: <code>K<sub>sp</sub> = (s)(0.1 + 2s)<sup>2</sup></code>.</li>
+                            <li><strong>Assume <code>s</code> is small</strong> (e.g., <code>0.1 + 2s &approx; 0.1</code>).</li>
+                            <li>Solve the simplified equation for <code>s</code>.</li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Question 8 -->
+                    <li>
+                        <strong>Given:</strong> Two mixed solutions. <strong>Find:</strong> Will a precipitate form?
+                        <ul class="steps">
+                            <li>Identify the potential precipitate (the insoluble salt).</li>
+                            <li>Write its K<sub>sp</sub> expression. This is your target for <strong>Q</strong>.</li>
+                            <li><strong>Part 1: Dilution</strong>
+                                <ul>
+                                    <li>Calculate the <strong>new total volume</strong> (V<sub>final</sub> = V<sub>1</sub> + V<sub>2</sub>).</li>
+                                    <li>Calculate the new, diluted concentrations of the relevant ions using <code>M<sub>1</sub>V<sub>1</sub> = M<sub>2</sub>V<sub>2</sub></code>.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Part 2: Calculate Q</strong>
+                                <ul>
+                                    <li>Plug these <strong>new diluted concentrations</strong> into the Q expression.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Part 3: Compare Q vs. K<sub>sp</sub></strong>
+                                <ul>
+                                    <li>If <strong>Q > K<sub>sp</sub></strong>: Yes, a precipitate will form.</li>
+                                    <li>If <strong>Q < K<sub>sp</sub></strong>: No, the solution is unsaturated.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                 </ol>
             </div>
         </details>

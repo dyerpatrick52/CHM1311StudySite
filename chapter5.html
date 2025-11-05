@@ -18,6 +18,7 @@
         <p>Defining acidity, quantifying it with pH, and calculating pH for strong and weak solutions.</p>
         <hr>
 
+        <!-- Core Concepts -->
         <details>
             <summary>Core Concepts</summary>
             <div class="content">
@@ -62,6 +63,7 @@
             </div>
         </details>
 
+        <!-- Key Skills -->
         <details>
             <summary>Key Skills & Problem Solving</summary>
             <div class="content">
@@ -83,6 +85,7 @@
             </div>
         </details>
 
+        <!-- Common Pitfalls -->
         <details>
             <summary>Common Pitfalls</summary>
             <div class="content">
@@ -95,18 +98,121 @@
             </div>
         </details>
         
+        <!-- Question Types (UPDATED SECTION) -->
         <details>
             <summary>Expected Question Types</summary>
             <div class="content">
                 <ol>
-                    <li><strong>Given:</strong> A reaction. <strong>Find:</strong> The Brønsted-Lowry acid, base, conjugates.</li>
-                    <li><strong>Given:</strong> One of pH, pOH, [H<sub>3</sub>O<sup>+</sup>], [OH<sup>-</sup>]. <strong>Find:</strong> The other three.</li>
-                    <li><strong>Given:</strong> Concentration of a strong acid/base. <strong>Find:</strong> pH.</li>
-                    <li><strong>Given:</strong> Concentration and K<sub>a</sub> of a weak acid. <strong>Find:</strong> pH.</li>
-                    <li><strong>Given:</strong> Concentration and K<sub>b</sub> of a weak base. <strong>Find:</strong> pH.</li>
-                    <li><strong>Given:</strong> Concentration and pH of a weak acid. <strong>Find:</strong> K<sub>a</sub> (ICE table in reverse).</li>
-                    <li><strong>Given:</strong> K<sub>a</sub> for an acid. <strong>Find:</strong> K<sub>b</sub> for its conjugate base.</li>
-                    <li><strong>Given:</strong> Concentration of a salt (e.g., NaF, NH<sub>4</sub>Cl). <strong>Find:</strong> The pH (salt hydrolysis).</li>
+                    <!-- Question 1 -->
+                    <li>
+                        <strong>Given:</strong> A reaction. <strong>Find:</strong> The Brønsted-Lowry acid, base, conjugates.
+                        <ul class="steps">
+                            <li>Identify the species that <strong>donates</strong> a H<sup>+</sup> (this is the <strong>acid</strong>).</li>
+                            <li>Identify the species that <strong>accepts</strong> the H<sup>+</sup> (this is the <strong>base</strong>).</li>
+                            <li>Find the acid's "partner" on the product side (what's left after donating H<sup>+</sup>) - this is the <strong>conjugate base</strong>.</li>
+                            <li>Find the base's "partner" on the product side (what it becomes after accepting H<sup>+</sup>) - this is the <strong>conjugate acid</strong>.</li>
+                        </ul>
+                    </li>
+
+                    <!-- Question 2 -->
+                    <li>
+                        <strong>Given:</strong> One of pH, pOH, [H<sub>3</sub>O<sup>+</sup>], [OH<sup>-</sup>]. <strong>Find:</strong> The other three.
+                        <ul class="steps">
+                            <li>Start with your given value.</li>
+                            <li>Use <strong><code>pH = -log[H<sub>3</sub>O<sup>+</sup>]</code></strong> or <strong><code>[H<sub>3</sub>O<sup>+</sup>] = 10<sup>-pH</sup></code></strong>.</li>
+                            <li>Use <strong><code>pOH = -log[OH<sup>-</sup>]</code></strong> or <strong><code>[OH<sup>-</sup>] = 10<sup>-pOH</sup></code></strong>.</li>
+                            <li>Use the master link: <strong><code>pH + pOH = 14.00</code></strong>.</li>
+                            <li>Or use <strong><code>K<sub>w</sub> = [H<sub>3</sub>O<sup>+</sup>][OH<sup>-</sup>] = 1.0 x 10<sup>-14</sup></code></strong>.</li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Question 3 -->
+                    <li>
+                        <strong>Given:</strong> Concentration of a strong acid/base. <strong>Find:</strong> pH.
+                        <ul class="steps">
+                            <li>Identify the acid/base as <strong>strong</strong> (this means 100% dissociation, no ICE table).</li>
+                            <li>For a strong acid (e.g., 0.05 M HCl): <code>[H<sub>3</sub>O<sup>+</sup>] = [Acid] = 0.05 M</code>.</li>
+                            <li>For a strong base (e.g., 0.05 M Ba(OH)<sub>2</sub>): Watch stoichiometry! <code>[OH<sup>-</sup>] = 2 × [Base] = 0.10 M</code>.</li>
+                            <li>If you have <code>[H<sub>3</sub>O<sup>+</sup>]</code>, calculate <code>pH = -log[H<sub>3</sub>O<sup>+</sup>]</code>.</li>
+                            <li>If you have <code>[OH<sup>-</sup>]</code>, calculate <code>pOH = -log[OH<sup>-</sup>]</code>, then <code>pH = 14.00 - pOH</code>.</li>
+                        </ul>
+                    </li>
+
+                    <!-- Question 4 -->
+                    <li>
+                        <strong>Given:</strong> Concentration and K<sub>a</sub> of a weak acid. <strong>Find:</strong> pH.
+                        <ul class="steps">
+                            <li>Write the dissociation reaction: <code>HA &rightleftharpoons; H<sup>+</sup> + A<sup>-</sup></code>.</li>
+                            <li>Set up an <strong>ICE table</strong>.</li>
+                            <li>Fill "E" row: <code>[HA] = [Initial] - x</code>, <code>[H<sup>+</sup>] = x</code>, <code>[A<sup>-</sup>] = x</code>.</li>
+                            <li>Write the K<sub>a</sub> expression: <code>K<sub>a</sub> = (x<sup>2</sup>) / ([Initial] - x)</code>.</li>
+                            <li>Assume <code>x</code> is small (5% rule): <code>K<sub>a</sub> &approx; (x<sup>2</sup>) / [Initial]</code>.</li>
+                            <li>Solve for <code>x</code>. <code>x = [H<sub>3</sub>O<sup>+</sup>]</code>.</li>
+                            <li>Check assumption: <code>(x / [Initial]) * 100% < 5%</code>.</li>
+                            <li>Calculate <code>pH = -log(x)</code>.</li>
+                        </ul>
+                    </li>
+
+                    <!-- Question 5 -->
+                    <li>
+                        <strong>Given:</strong> Concentration and K<sub>b</sub> of a weak base. <strong>Find:</strong> pH.
+                        <ul class="steps">
+                            <li>Write the dissociation reaction: <code>B + H<sub>2</sub>O &rightleftharpoons; BH<sup>+</sup> + OH<sup>-</sup></code>.</li>
+                            <li>Set up an <strong>ICE table</strong>.</li>
+                            <li>Fill "E" row: <code>[B] = [Initial] - x</code>, <code>[BH<sup>+</sup>] = x</code>, <code>[OH<sup>-</sup>] = x</code>.</li>
+                            <li>Write the K<sub>b</sub> expression: <code>K<sub>b</sub> = (x<sup>2</sup>) / ([Initial] - x)</code>.</li>
+                            <li>Assume <code>x</code> is small (5% rule).</li>
+                            <li>Solve for <code>x</code>. <code>x = [OH<sup>-</sup>]</code>.</li>
+                            <li>Check assumption.</li>
+                            <li>Calculate <code>pOH = -log(x)</code>.</li>
+                            <li>Calculate <code>pH = 14.00 - pOH</code>.</li>
+                        </ul>
+                    </li>
+
+                    <!-- Question 6 -->
+                    <li>
+                        <strong>Given:</strong> Concentration and pH of a weak acid. <strong>Find:</strong> K<sub>a</sub>.
+                        <ul class="steps">
+                            <li>This is an ICE table in reverse.</li>
+                            <li>First, find <code>x</code> from the pH: <code>x = [H<sub>3</sub>O<sup>+</sup>] = 10<sup>-pH</sup></code>.</li>
+                            <li>Set up an <strong>ICE table</strong>.</li>
+                            <li>Fill in the "E" row using the <code>x</code> you just found:
+                                <ul>
+                                    <li><code>[H<sup>+</sup>] = x</code></li>
+                                    <li><code>[A<sup>-</sup>] = x</code></li>
+                                    <li><code>[HA] = [Initial] - x</code></li>
+                                </ul>
+                            </li>
+                            <li>Plug these <strong>equilibrium</strong> concentrations into the K<sub>a</sub> expression: <code>K<sub>a</sub> = (x)(x) / ([Initial] - x)</code>.</li>
+                            <li>Solve for K<sub>a</sub>.</li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Question 7 -->
+                    <li>
+                        <strong>Given:</strong> K<sub>a</sub> for an acid. <strong>Find:</strong> K<sub>b</sub> for its conjugate base.
+                        <ul class="steps">
+                            <li>Use the formula: <strong><code>K<sub>a</sub> × K<sub>b</sub> = K<sub>w</sub></code></strong>, where <code>K<sub>w</sub> = 1.0 x 10<sup>-14</sup></code>.</li>
+                            <li>Rearrange: <code>K<sub>b</sub> = K<sub>w</sub> / K<sub>a</sub></code>.</li>
+                        </ul>
+                    </li>
+
+                    <!-- Question 8 -->
+                    <li>
+                        <strong>Given:</strong> Concentration of a salt (e.g., 0.1 M NaF). <strong>Find:</strong> The pH.
+                        <ul class="steps">
+                            <li>Identify the ions (e.g., Na<sup>+</sup> and F<sup>-</sup>).</li>
+                            <li>Determine if either ion is acidic or basic.
+                                <ul>
+                                    <li>Na<sup>+</sup> is the cation of a strong base (NaOH). It is <strong>neutral</strong>.</li>
+                                    <li>F<sup>-</sup> is the anion of a weak acid (HF). It is a <strong>weak base</strong>.</li>
+                                </ul>
+                            </li>
+                            <li>The solution pH is determined by the F<sup>-</sup>. This is now a <strong>weak base problem</strong> (see Question 5).</li>
+                            <li>You will need K<sub>b</sub> for F<sup>-</sup>. Find it using <code>K<sub>b</sub> = K<sub>w</sub> / K<sub>a</sub></code> (you'll be given K<sub>a</sub> for HF).</li>
+                            <li>Set up an ICE table for <code>F<sup>-</sup> + H<sub>2</sub>O &rightleftharpoons; HF + OH<sup>-</sup></code> and solve for <code>x = [OH<sup>-</sup>]</code>, then find pOH and pH.</li>
+                        </ul>
+                    </li>
                 </ol>
             </div>
         </details>

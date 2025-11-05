@@ -148,3 +148,30 @@ summary {
     padding: 20px 30px;
     border-top: 1px solid #dee2e6;
 }
+
+/* --- NEW STYLE FOR STEPS --- */
+.steps {
+    margin-top: 10px;
+    padding-left: 25px; /* Indent the steps */
+    list-style-type: disc; /* Back to normal bullets */
+    background-color: #fdfdfd; /* Very light background for steps */
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+.steps li {
+    margin-bottom: 8px; /* Tighter spacing for steps */
+}
+
+/* Make nested lists have different bullet styles */
+.steps ul {
+    list-style-type: circle;
+    margin-top: 8px;
+}
+
+.steps ol {
+    list-style-type: lower-alpha;
+     margin-top: 8px;
+}
