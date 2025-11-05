@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Equilibrium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="page-nav">
+            <a href="index.html">← Home</a> |
+            <a href="chapter5.html">Chapter 5 →</a>
+        </nav>
+        
+        <h1>Chapter 4: Chemical Equilibrium ⚛️</h1>
+        <p>Understanding the balance between reactants and products in reversible reactions.</p>
+        <hr>
+
+        <details>
+            <summary>Core Concepts</summary>
+            <div class="content">
+                <h3>Dynamic Equilibrium</h3>
+                <p>A state where the <strong>rate of the forward reaction equals the rate of the reverse reaction</strong>. Concentrations of reactants and products remain constant, but the reactions have not stopped.</p>
+                
+                <h3>Equilibrium Constant (K)</h3>
+                <p>For <code>aA + bB &rightleftharpoons; cC + dD</code>:</p>
+                <ul>
+                    <li><strong>K<sub>c</sub></strong> = <code>[C]<sup>c</sup>[D]<sup>d</sup> / [A]<sup>a</sup>[B]<sup>b</sup></code> (using Molarity)</li>
+                    <li><strong>K<sub>p</sub></strong> = <code>(P<sub>C</sub>)<sup>c</sup>(P<sub>D</sub>)<sup>d</sup> / (P<sub>A</sub>)<sup>a</sup>(P<sub>B</sub>)<sup>b</sup></code> (using Partial Pressure)</li>
+                    <li><strong>CRUCIAL:</strong> Pure solids (s) and liquids (l) are <strong>excluded</strong>.</li>
+                </ul>
+                
+                <h3>Interpreting K</h3>
+                <ul>
+                    <li><strong>K > 10<sup>5</sup>:</strong> Product-favored. Reaction goes to completion.</li>
+                    <li><strong>K < 10<sup>-5</sup>:</strong> Reactant-favored. Little product forms.</li>
+                    <li><strong>Intermediate K:</strong> Appreciable amounts of both.</li>
+                </ul>
+
+                <h3>K<sub>p</sub> vs K<sub>c</sub></h3>
+                <p><code>K<sub>p</sub> = K<sub>c</sub>(RT)<sup>&Delta;n</sup></code> where &Delta;n = (moles of gas products) - (moles of gas reactants).</p>
+
+                <h3>Reaction Quotient (Q)</h3>
+                <p>Calculated the same as K, but with <strong>non-equilibrium</strong> concentrations.</p>
+                <ul>
+                    <li><strong>Q < K:</strong> Shifts RIGHT (→) to make more products.</li>
+                    <li><strong>Q > K:</strong> Shifts LEFT (←) to make more reactants.</li>
+                    <li><strong>Q = K:</strong> System is at equilibrium.</li>
+                </ul>
+
+                <h3>Le Châtelier's Principle</h3>
+                <p>When a system at equilibrium is stressed, it shifts to relieve that stress.</p>
+                <ul>
+                    <li><strong>Concentration:</strong> Add substance, shift away. Remove substance, shift toward.</li>
+                    <li><strong>Pressure (Gases):</strong> Increase P, shift to side with FEWER moles of gas.</li>
+                    <li><strong>Temperature:</strong> Increase T, shift in ENDOTHERMIC direction (treat heat as a reactant/product). <strong>This is the only stress that changes the value of K.</strong></li>
+                </ul>
+            </div>
+        </details>
+
+        <details>
+            <summary>Key Skills & Problem Solving</summary>
+            <div class="content">
+                <h3>Solving with ICE Tables</h3>
+                <ol>
+                    <li><strong>I (Initial):</strong> Fill in initial concentrations.</li>
+                    <li><strong>C (Change):</strong> Define change in terms of 'x', using stoichiometry.</li>
+                    <li><strong>E (Equilibrium):</strong> Sum the I and C rows.</li>
+                    <li>Substitute "E" values into the K expression and solve for x.</li>
+                </ol>
+                <p><strong>5% Approximation:</strong> If K is very small, you can assume <code>[Initial] - x &approx; [Initial]</code>. Always check your assumption afterward: <code>(x / [Initial]) * 100% < 5%</code>.</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Common Pitfalls</summary>
+            <div class="content">
+                <ul>
+                    <li>Forgetting to exclude solids (s) and liquids (l) from the K expression.</li>
+                    <li>Forgetting to use coefficients as exponents in the K expression.</li>
+                    <li>Messing up stoichiometry in the "C" row of an ICE table (e.g., writing -x instead of -2x).</li>
+                    <li>Mixing up Q (snapshot) and K (equilibrium).</li>
+                    <li>Forgetting to check the 5% approximation.</li>
+                </ul>
+            </div>
+        </details>
+        
+        <details>
+            <summary>Expected Question Types</summary>
+            <div class="content">
+                <ol>
+                    <li><strong>Given:</strong> A reaction. <strong>Find:</strong> The K<sub>c</sub> or K<sub>p</sub> expression.</li>
+                    <li><strong>Given:</strong> Equilibrium concentrations. <strong>Find:</strong> The value of K.</li>
+                    <li><strong>Given:</strong> Initial concentrations and one equilibrium concentration. <strong>Find:</strong> The value of K (ICE table).</li>
+                    <li><strong>Given:</strong> K and initial concentrations. <strong>Find:</strong> Equilibrium concentrations (ICE table + solve for x).</li>
+                    <li><strong>Given:</strong> K<sub>c</sub> and T. <strong>Find:</strong> K<sub>p</sub> (or vice-versa).</li>
+                    <li><strong>Given:</strong> K and a set of initial concentrations. <strong>Find:</strong> Which direction the reaction will shift (Calculate Q vs. K).</li>
+                    <li><strong>Given:</strong> A system at equilibrium. <strong>Find:</strong> Which direction it will shift if you change T, P, or concentration (Le Châtelier's).</li>
+                </ol>
+            </div>
+        </details>
+
+    </div>
+</body>
+</html>
